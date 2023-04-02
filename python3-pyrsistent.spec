@@ -6,19 +6,19 @@
 Summary:	Persistent/Functional/Immutable data structures
 Summary(pl.UTF-8):	Trwałe/funkcyjne/niezmienne struktury danych
 Name:		python3-pyrsistent
-Version:	0.18.1
-Release:	3
+Version:	0.19.3
+Release:	1
 License:	MIT
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/pyrsistent/
 Source0:	https://files.pythonhosted.org/packages/source/p/pyrsistent/%{module}-%{version}.tar.gz
-# Source0-md5:	cef3da08455664bf917dcf8cd00d49a4
+# Source0-md5:	761266eab1f9dc9280cdb0a6d2dedb08
 URL:		http://github.com/tobgu/pyrsistent/
 BuildRequires:	python3-devel >= 1:3.7
 BuildRequires:	python3-setuptools
 %if %{with tests}
 BuildRequires:	python3-hypothesis < 7
-BuildRequires:	python3-pytest < 7
+BuildRequires:	python3-pytest
 BuildRequires:	python3-six
 %endif
 BuildRequires:	rpm-pythonprov
