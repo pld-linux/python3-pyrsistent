@@ -7,7 +7,7 @@ Summary:	Persistent/Functional/Immutable data structures
 Summary(pl.UTF-8):	Trwałe/funkcyjne/niezmienne struktury danych
 Name:		python3-pyrsistent
 Version:	0.19.3
-Release:	2
+Release:	3
 License:	MIT
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/pyrsistent/
