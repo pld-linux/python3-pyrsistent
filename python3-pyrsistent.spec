@@ -15,16 +15,15 @@ Source0:	https://files.pythonhosted.org/packages/source/p/pyrsistent/%{module}-%
 # Source0-md5:	dce0f9a13668dbf8bb76f74954b4a42a
 Patch0:		python3.13.patch
 URL:		http://github.com/tobgu/pyrsistent/
-BuildRequires:	python3-devel >= 1:3.7
-BuildRequires:	python3-setuptools
+BuildRequires:	python3-devel >= 1:3.8
+BuildRequires:	python3-setuptools >= 1:42
 %if %{with tests}
 BuildRequires:	python3-hypothesis < 7
 BuildRequires:	python3-pytest
-BuildRequires:	python3-six
 %endif
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.714
-Requires:	python3-modules >= 1:3.7
+Requires:	python3-modules >= 1:3.8
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -61,7 +60,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc CHANGES.txt README.rst
+%doc CHANGES.txt LICENSE.mit README.rst
 %attr(755,root,root) %{py3_sitedir}/pvectorc.cpython-*.so
 %{py3_sitedir}/_pyrsistent_version.py
 %{py3_sitedir}/__pycache__/_pyrsistent_version.cpython-*.py[co]
